@@ -1,6 +1,6 @@
 **This instruction is a guide for making the docker image for Websvf.**
 
-The image is base on ubuntu official image on docker hub.  
+The image is base on ubuntu official image on docker hub.    
 
 1.Get the Ubuntu image from docker hub  
 
@@ -71,4 +71,5 @@ $ docker run -d -p 8080:8080 --name coder coder code-server /home --host 0.0.0.0
 
 **To be continued.**
 
-To install the websvf, you need to copy the vsix to the container and install its environment. These steps will before step 9. After all setup up, pack the container.
+To install the websvf, you need to copy the vsix to the container and install its environment.   
+These steps will before step 9. After all setup up, pack the container.
