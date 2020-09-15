@@ -1,4 +1,4 @@
-**This instruction is a guide for making the docker image for Websvf. ** 
+**This instruction is a guide for making the docker image for Websvf.**
 
 The image is base on ubuntu official image on docker hub.  
 
