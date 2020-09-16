@@ -30,7 +30,7 @@ $ apt upgrade
 5.Install environment
 
 ```shell
-$ apt install sudo curl nodejs npm yarn
+$ apt install sudo curl nodejs npm yarn lsb-core 
 ```
 
 6.Install code-server
@@ -67,9 +67,37 @@ $ docker run -d -p 8080:8080 --name coder coder code-server /home --host 0.0.0.0
 
 `` http://localhost:8080/ ``
 
+11.copy the vsix to the container. I download the lastest plugin from VSC store.
 
+```shell
+$ docker cp ~/Downloads/TianyangGuan.svftools-0.0.3.vsix coder:/home
+```
+
+11.Install it in vscode
+
+11.Click the button below to install environment
+
+11.test the function
+
+12.pack it to a new image
+
+```shell
+$ docker commit coder yukinsnow/websvf-docker:0.2
+```
+
+13.show images
+
+```shell
+$ docker images
+```
+
+14.run the new container
+
+```shell
+$ docker run -d -p 8080:8080 --name websvf yukinsnow/websvf-docker:0.2 code-server /root/INPUT_PROJECT --host 0.0.0.0 --port 8080
+```
 
 **To be continued.**
 
-To install the websvf, you need to copy the vsix to the container and install its environment.   
-These steps will before step 9. After all setup up, pack the container.
+Now version is install all thing manually.
+So we need to make it automatically.
