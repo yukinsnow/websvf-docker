@@ -1,5 +1,6 @@
-**This instruction is a guide for making the docker image for Websvf.**
+**Tutorial for creating images completely manually**
 
+Here's a tutorial for creating images completely manually.
 The image is base on ubuntu official image on docker hub.    
 
 1.Get the Ubuntu image from docker hub  
